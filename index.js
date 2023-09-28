@@ -8,6 +8,7 @@ circle["area"] = Math.PI * circle.radius ** 2;
 
 // console.log(circle);
 
+
 // Modifying a property using Dot & Bracket Notation
 const mondayMenu = {
     cheesePlate: {
@@ -19,4 +20,17 @@ const mondayMenu = {
     salad: "Cobb",
   };
 
-  
+mondayMenu.fries = "sweet potato"
+
+function destructivelyupdateMondaymenu (object, key, value){
+    object[key] = value;
+    return object
+}
+
+tuesdayMenu = destructivelyupdateMondaymenu(mondayMenu, "salad", "caesar");
+
+// console.log(tuesdayMenu)
+// console.log(mondayMenu.salad);
+
+
+// console.log(mondayMenu)

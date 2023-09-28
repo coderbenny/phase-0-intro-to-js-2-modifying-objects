@@ -34,3 +34,14 @@ tuesdayMenu = destructivelyupdateMondaymenu(mondayMenu, "salad", "caesar");
 
 
 // console.log(mondayMenu)
+
+// Updating an object non-destructively
+function nondestructivelyUpdateObject(object, key, value){
+    let newObject = {...object};
+    newObject[key] = value;
+    return newObject;
+}
+
+sundayMenu = nondestructivelyUpdateObject(tuesdayMenu, "fries", "Shoestring")
+
+console.log(sundayMenu);
